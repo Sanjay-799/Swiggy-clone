@@ -1,48 +1,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body{
+body {
   font-family: "Poppins", sans-serif;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-.NavBarSection{
+.navBarSection {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px 100px;
-  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 90%;
+  min-width: 80%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: white;
+}
+
+.companyTitle h2 {
+  color: orange;
+}
+.userProfile{
+  cursor: pointer;
 }
 
 /* item-section */
-.itemSection{
+.itemSection {
   display: flex;
   width: 100%;
-  margin-top: 40px;
+  margin-bottom: 30px;
   /* overflow-x: scroll; */
-
+  margin-top: 0px;
 }
-.gallery{
+
+.itemDisplay-title {
+  margin-top: 100px;
+  font-weight: 700;
+}
+
+.gallery {
   width: 150px;
 
 }
-.gallery img{
+
+.gallery img {
   width: 100%;
 }
+
 /* landingSection */
-.landingSection{
-  padding:0 120px;
+.landingSection {
+  padding: 0 120px;
 }
+
 /* chainsection */
-.chainSection{
+.chainSection {
   display: flex;
   overflow-x: hidden;
   position: relative;
   height: auto;
+
 }
-.vendorBox img{
-  width:350px;
+
+/* .chainHead {
+  border-top: 1px solid lightgray;
+
+} */
+
+.chainsText {
+  margin-left: 15px;
+}
+
+.btnSection {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 50px;
+  right: 10px;
+  gap: 10px;
+
+}
+
+.btnSection button {
+  margin-left: 10px;
+  border-radius: 15px;
+  border-width: 0px;
+}
+
+.btnicons {
+  font-size: larger;
+  padding: 5px 5px;
+
+}
+
+.loaderSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.vendorBox img {
+  width: 350px;
   height: 220px;
   flex: 0 0 auto;
   margin-right: 40px;
@@ -51,26 +114,34 @@ body{
 }
 
 /* FirmSecrion */
-.firmSection{
+.firmSection {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   margin: 0 auto;
 }
+
 .firmGroup {
   position: relative;
 }
-.firmName{
+
+.firmName {
   font-weight: 600;
   color: black;
 }
-.firmDetails{
+
+.firmDetails {
   /* border: 1px solid red; */
   padding-left: 10px;
 }
 
-.firmGroup img{
-  width:240px;
+/* .firmHead {
+  margin-top: 70px;
+  border-top: 1px solid lightgray;
+} */
+
+.firmGroup img {
+  width: 265px;
   height: 180px;
   flex: 0 0 auto;
   margin-right: 40px;
@@ -97,8 +168,66 @@ body{
   /* background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,26,27,1) 50%, rgba(0,212,255,1) 100%); */
 }
-.firmArea{
+
+.firmArea {
   font-size: small;
   color: grey;
 
 }
+
+/* productSection */
+.productSection {
+  display: flex;
+  flex-direction: column;
+  padding: 0 150px;
+  margin-top: 100px;
+}
+
+.productBox {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  border-top: 1px solid grey;
+  padding: 10px 30px;
+}
+
+.productGroup img {
+  width: 110px;
+  border-radius: 5px;
+
+
+}
+
+.addButton {
+
+  text-align: center;
+  border-radius: 5px;
+  background-color: white;
+  color: green;
+  border: 1.25px solid lightgrey;
+  cursor: pointer;
+
+}
+
+.Link {
+  color: black;
+  text-decoration: none;
+}
+
+.filterButton {
+  margin: 30px;
+
+}
+
+.filterbtn {
+  border-radius: 20px;
+  margin-left: 10px;
+  width: 80px;
+  height: 30px;
+  font-size: 10px;
+  border-width: 1px;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
